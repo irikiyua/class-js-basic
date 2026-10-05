@@ -11,47 +11,65 @@
     <h1>JavaScript基礎</h1>
     <p>開発者ツールのConsole（コンソール）を開いて結果を確認してください。</p>
     <script>
-        // 1行コメント
-        /*
-        複数行コメント
-        */
-        console.log('js!', 123);
-        console.warn('warn');
-        console.error('error');
-        console.table(['apple', 'banana']);
 
+        // １行コメント
+        /*複数行コメント*/
+
+        console.log('js!', 123);
+        // 注意のマークでコンソールに出てくる　なにか注意した方がいいものがある時に使う
+        console.warn('warn');
+        // エラーのマークでコンソールに出て来る
+        console.error('error');
+        console.table(['りんご', 'レモン', 'ぶどう']);
+
+
+        // どのように変化しているかは変数に入っている　それをコンソールで出せば今何やってるかわかりやすい
+        // 変数に何も入ってないとundefindと出る
         let name;
         console.log(name);
-        name = 'takagi';
+
+        /*  再宣言はできない
+            例：let name = 'yua';  */
+        // 下のように再代入はできる
+        name = 'iriki';
         console.log(name);
 
         console.log(6 + 9);
         console.log(10 - 15);
         console.log(3 * 7);
-        console.log(10 / (5 + 3));
+        console.log(10 / 5);
+
+        // 割った時の余が出る
         console.log(7 % 3);
+        // この式の場合３の二条がでる
         console.log(3 ** 2);
+
 
         let x = 1;
         x = x + 1;
+
         /*
-        x+1 だけでは変数の値は変わらない
+        x+1だけでは変数の値は変わらない
         必ず、計算した結果を代入する必要がある
         */
+
         console.log(x);
 
-        x += 100;
+
+        x += 100; //省略できる
         console.log(x);
 
-        x--;
+        x++; //1足す　※ xが+の前にあるか後ろにあるかで結果が変わってくる
         console.log(x);
 
         console.log(typeof x);
         console.log(x + 'px');
 
-        const person = 'takagi';
+        const person = `iriki`;
         const points = 120;
-        console.log('こんにちは、${person}さん。点数は${points/2}です。');
+
+        // ${}の中で計算することもできる
+        console.log(`こんにちは、${person}さん。点数は${points / 2}です。`)
     </script>
 </body>
 
