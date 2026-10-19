@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1000px 0;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.is-active {
+    background-color: #06c;
+    color: #fff;
+}

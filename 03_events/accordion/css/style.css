@@ -1,0 +1,35 @@
+.accordion {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    display: none;
+    /* 初期状態は非表示 */
+    padding: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+}
+
+.accordion-content.is-open {
+    display: block;
+}
+
+.icon.is-open {
+    transform: rotate(45deg);
+}
