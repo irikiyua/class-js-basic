@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

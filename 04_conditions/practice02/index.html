@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_HTML属性の操作</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1>HTML属性の操作</h1>
+
+    <!-- 1. 画像切り替えエリア（練習4で使用） -->
+    <section>
+        <h2>1. 画像の切り替え（src / alt）</h2>
+        <p>
+            <img id="view-img" src="https://picsum.photos/id/1015/500/300" alt="昼の山の風景">
+        </p>
+        <button id="toggle-img-btn">昼 / 夜を切り替える</button>
+    </section>
+
+    <!-- 2. リンク切り替えエリア（練習5で使用） -->
+    <section>
+        <h2>2. リンク先の切り替え（href / target）</h2>
+        <p>目的のサイトを選択してください：</p>
+        <button id="switch-site-btn">公式サイトへ切り替え</button>
+        <p>
+            <a id="external-link" href="https://google.com" target="_blank">Googleを開く（新しいタブ）</a>
+        </p>
+    </section>
+
+    <!-- 3. パスワード切り替えエリア（項目4・練習6で使用） -->
+    <section>
+        <h2>3. パスワードの表示/非表示（type）</h2>
+        <p>
+            <label for="password-input">パスワード：</label>
+            <input type="password" id="password-input" placeholder="パスワードを入力">
+            <button type="button" id="toggle-password-btn">表示</button>
+        </p>
+    </section>
+
+    <!-- 4. 文字数カウンターエリア（項目5・練習7で使用） -->
+    <section>
+        <h2>4. 文字数カウンターと超過警告（value.length / disabled）</h2>
+        <p>
+            <label for="comment-input">ひとことコメント（最大15文字）：</label><br>
+            <input type="text" id="comment-input" placeholder="15文字以内で入力してください">
+        </p>
+        <p class="counter-status">
+            <span id="char-count">0</span> / 15文字
+            <span id="warning-text"></span>
+        </p>
+        <button id="post-btn" disabled>投稿する</button>
+    </section>
+</body>
+</html>
